@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="D:/workspace/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/jsoup-1.8.2.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/commons-codec-1.9.jar"/>
@@ -32,5 +32,7 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/jre/lib/security/local_policy.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/jre/lib/security/US_export_policy.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

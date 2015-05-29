@@ -6,34 +6,25 @@ import java.io.PrintStream;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpRequestBase;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-public abstract class Loginer {
-	protected String url;
-	protected String user;
-	protected String pwd;
+public class Loginer {
 	protected CloseableHttpClient httpClient;
 	protected CloseableHttpResponse response;
-	
-	public Loginer(String url, String user, String pwd) {
-		this.url = url;
-		this.user = user;
-		this.pwd = pwd;
-		httpClient = HttpClients.custom().build();
-	}
-	
-	public Loginer login() {
-		HttpPost post = init();
+		
+	public Loginer login(Type t, String url, String user, String pwd) {
+		RequestBuilder builder = new RequestBuilder(url,user,pwd);
+		HttpPost post = builder.buildPost(t);
 		try {
+			httpClient = HttpClients.custom().build();
 			CloseableHttpResponse redirect = httpClient.execute(post);
 			//System.out.println("getStatusCode:"+response.getStatusLine().getStatusCode());
-			String url = redirect.getHeaders("Location")[0].getValue();
-			HttpRequestBase get = redirect(url);
+			String address = redirect.getHeaders("Location")[0].getValue();
+			HttpRequestBase get = builder.buildGet(t, address);
 			this.response = httpClient.execute(get);
 			redirect.close();
 		} catch(IOException e) {
@@ -57,7 +48,4 @@ public abstract class Loginer {
         } 
 	}
 	
-	protected abstract HttpPost init();
-	
-	protected abstract HttpGet redirect(String url);
 }

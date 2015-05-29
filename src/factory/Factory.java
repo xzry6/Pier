@@ -1,17 +1,27 @@
 package factory;
 
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpRequestBase;
 
 public abstract class Factory {
-
-	void setLinkedIn(HttpRequestBase request){
-		
+	
+	public PostFactory set(Type cookie, String url, String user, String pwd){
+		return null;
 	}
 	
-	void setLinkedIn(HttpPost request, String user, String pwd){
-		
+	public CookieFactory set(Type cookie, HttpGet request){
+		return null;
 	}
 	
+	public CookieFactory set(Type cookie, HttpPost request) {
+		return null;
+	}
 	
+	public HttpGet getGet(){
+		return null;
+	}
+	
+	public HttpPost getPost(){
+		return null;
+	}
 }

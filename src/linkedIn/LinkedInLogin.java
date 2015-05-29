@@ -1,39 +1,29 @@
 package linkedIn;
 
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-
-import factory.CookieFactory;
 import factory.Loginer;
-import factory.PostFactory;
 import factory.Type;
 
 public class LinkedInLogin extends Loginer{
-	public LinkedInLogin(String url, String user, String pwd) {
-		super(url, user, pwd);
-	}
 	
-	protected HttpPost init() {
-		HttpPost post = new HttpPost(url);
-		new CookieFactory(Type.LinkedIn, post);
-		new PostFactory(Type.LinkedIn, post, user, pwd);
-		return post;
+	@Override
+	public Loginer login(Type t, String url, String user, String pwd) {
+		super.login(t, url, user, pwd);
+		return this;
 	}
-	
-	protected HttpGet redirect(String url) {
-		HttpGet get = new HttpGet(url);
-		new CookieFactory(Type.LinkedIn, get);
-		return get;
+	@Override
+	public void printf(String filename) {
+		super.printf(filename);
 	}
-
 	
 	public static void main(String[] args) {
 		String url = "https://www.linkedin.com/uas/login-submit";
 		String user = "xzry6@mail.missouri.edu";
 		String pwd = "19911121";
-		String filename = "linkedin.log";
+		String filename = "linkedin.1";
 		try {
-			new LinkedInLogin(url,user,pwd).login().printf(filename);
+			Loginer l = new LinkedInLogin();
+			l.login(Type.LinkedIn, url, user, pwd);
+			l.printf(filename);
 		} catch(Exception e){
 			e.printStackTrace();
 		}
