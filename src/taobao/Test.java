@@ -16,6 +16,7 @@ public class Test {
         req.setFields("shawwn,user_id,type");
         //req.setNick("sandbox_c_1");
         UserSellerGetResponse response;
+        
         try {
             response = client.execute(req,sessionkey); //执行API请求并打印结果
             System.out.println("result:"+response.getBody());
@@ -23,6 +24,7 @@ public class Test {
         } catch (ApiException e) {
         // deal error
         }
+        
     }
     public static void main(String[] args) {
         Test.testUserGet();

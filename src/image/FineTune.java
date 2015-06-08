@@ -18,25 +18,25 @@ public class FineTune {
 		
 		/*capture keywords from url and store in textName*/
 		
-	    //String url = "http://www.chakahao.com/cardbin/chakahao_other.html";
-	    //String textName = "chakahao.txt";
-	    //Spider.capture(url,textName);
+	    String url = "http://www.chakahao.com/cardbin/chakahao_abc.html";
+	    String textName = "chakahao.txt";
+	    Spider.capture(url,textName);
 		
 		
 		
 		/*fine tune some of the works then store in another file*/
 		
-	    //String readName = "chakahao2.txt";
-	    //String writeName = "chakahao3.txt";
-	    //List<String[]> list = readfile(writeName);
+	    String readName = "chakahao.txt";
+	    //String writeName = "chakahao2.txt";
+	    List<String[]> list = readfile(readName);
 	    //writefile(writeName,list);
 	    
 	    
 	    
 	    /*connect to mysql and modify the table*/
 	    
-	    //MySqlConnection mysql = new MySqlConnection();
-	    //mysql.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "bcsql", "Alameda2012","test_insert_bank_BIN",list);
+	    MySqlConnection mysql = new MySqlConnection();
+	    mysql.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "bcsql", "Alameda2012","test_insert_bank_BIN",list);
 	}
 	
 	
@@ -95,7 +95,8 @@ public class FineTune {
 	static Map<String,String> creatMap() {
 		
 		Map<String,String> map = new HashMap<String,String>();
-		
+		map.put("中国交通银行","交通银行");
+		map.put("中国招商银行","招商银行");
 		map.put("无锡市商业银行","江苏银行");
 		map.put("苏州市商业银行","江苏银行");
 		map.put("南通市商业银行","江苏银行");

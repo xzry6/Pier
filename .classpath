@@ -36,5 +36,6 @@
 	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/jre/lib/security/US_export_policy.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/taobao-sdk-java-online_standard-20131208.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/taobao-sdk-java-online_standard-20131208-source.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-8.0.22/lib/tomcat-jni.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
