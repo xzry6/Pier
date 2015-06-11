@@ -37,5 +37,11 @@
 	<classpathentry kind="lib" path="D:/workspace/taobao-sdk-java-online_standard-20131208.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/taobao-sdk-java-online_standard-20131208-source.jar"/>
 	<classpathentry kind="lib" path="D:/apache-tomcat-8.0.22/lib/tomcat-jni.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-examples-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-excelant-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-scratchpad-3.9-20121203.jar" sourcepath="C:/Users/dell0/.m2/repository/org/apache/poi/poi-scratchpad/3.9/poi-scratchpad-3.9-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
