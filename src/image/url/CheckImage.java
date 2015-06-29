@@ -12,9 +12,9 @@ public class CheckImage {
 	 private static File[] fm;  
 	 
 	 
-	 public static void main(String[] args) {
-	  check("C:\\Users\\dell0\\Desktop\\img");
-	 }
+//	 public static void main(String[] args) {
+//	  check("C:\\Users\\dell0\\Desktop\\img");
+//	 }
 	   
 	 
 	 public static List<String> check(String fileName) {  

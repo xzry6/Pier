@@ -6,7 +6,6 @@ import java.util.List;
 public class UpdateURL {
 	public static void main(String[] args) {
 		List<String> list = CheckImage.check("C:\\Users\\dell0\\Desktop\\img");
-		
 		//stored procedure
 		StoredURL sp = new StoredURL();
 		try {

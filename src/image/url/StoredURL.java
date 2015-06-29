@@ -9,13 +9,11 @@ import exchange.StoredProcedure;
 public class StoredURL extends StoredProcedure{
 
 	public boolean insertInstance(String tableName, String bankID) throws SQLException {
-		if(bankID==null||bankID.length()==0) return false;
-		StringBuffer sb = new StringBuffer("UPDATE "+tableName+" SET IMAGE_URL='http://pierup-images.oss-cn-shenzhen.aliyuncs.com/"+bankID+".PNG' WHERE ID='"+bankID+"'");
-		String query = sb.toString();
-		//System.out.println(query);
 		Statement stmt = conn.createStatement();
 		boolean bool = false;
 		if(checkNull(tableName,bankID,stmt)) {
+			String query = "UPDATE "+tableName+" SET IMAGE_URL='http://pierup-images.oss-cn-shenzhen.aliyuncs.com/"+bankID+".PNG' WHERE ID='"+bankID+"'";
+			//System.out.println(query);
 			bool = stmt.execute(query); 
 		}
 		stmt.close();
@@ -23,6 +21,10 @@ public class StoredURL extends StoredProcedure{
 	}
 	
 	public boolean checkNull(String tableName, String bankID, Statement stmt) throws SQLException {
+		if(bankID==null||bankID.length()==0) {
+			System.out.println("BANK ID is invalid!");
+			return false;
+		}
 		String s = "SELECT * FROM "+tableName+" WHERE ID='"+bankID+"'";
 		//String s = "SELECT * FROM "+tableName+" WHERE ID LIKE 'BI%'";
 		ResultSet rs = stmt.executeQuery(s);
@@ -32,7 +34,10 @@ public class StoredURL extends StoredProcedure{
 		if (rs.next()) {   
 	        if(rs.getString("IMAGE_URL")==null) 
 	        	return true;
-	        else return false;
+	        else {
+	        	System.out.println("IMAGE_URL already exists!");
+	        	return false;
+	        }
 	    }   
 		return false;
 	}
