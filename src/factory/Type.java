@@ -1,5 +1,6 @@
 package factory;
 
 public enum Type {
-	LinkedIn;
+	LinkedIn,
+	BOC;
 }

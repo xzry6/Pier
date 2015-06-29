@@ -43,5 +43,9 @@
 	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-ooxml-3.9-20121203.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-ooxml-schemas-3.9-20121203.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-scratchpad-3.9-20121203.jar" sourcepath="C:/Users/dell0/.m2/repository/org/apache/poi/poi-scratchpad/3.9/poi-scratchpad-3.9-sources.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/Gson/gson-1.5.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/Gson/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/Gson/slf4j-api-1.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/Gson/slf4j-log4j12-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

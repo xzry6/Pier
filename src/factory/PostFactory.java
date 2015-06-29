@@ -13,6 +13,10 @@ public class PostFactory extends Factory{
 				request = Parameters.setLinkedIn(url,user,pwd);
 				break;
 			}
+			case BOC: {
+				request = Parameters.setBOC(url);
+				break;
+			}
 		}
 		return this;
 	}

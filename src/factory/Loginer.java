@@ -3,6 +3,7 @@ package factory;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.Map;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -14,8 +15,8 @@ import org.apache.http.util.EntityUtils;
 
 public class Loginer {
 	protected CloseableHttpClient httpClient;
-	protected CloseableHttpResponse response;
-		
+	protected String webtext;
+	protected Map<String, String> map;
 	public Loginer login(Type t, String url, String user, String pwd) {
 		RequestBuilder builder = new RequestBuilder(url,user,pwd);
 		HttpPost post = builder.buildPost(t);
@@ -25,27 +26,42 @@ public class Loginer {
 			//System.out.println("getStatusCode:"+response.getStatusLine().getStatusCode());
 			String address = redirect.getHeaders("Location")[0].getValue();
 			HttpRequestBase get = builder.buildGet(t, address);
-			this.response = httpClient.execute(get);
+			CloseableHttpResponse response = httpClient.execute(get);
+			HttpEntity myEntity = response.getEntity();
+	        webtext = EntityUtils.toString(myEntity,"UTF-8"); 
 			redirect.close();
+	        response.close();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 		return this;
 	}
-	
-	public void printf(String filename) {
-		HttpEntity myEntity = response.getEntity();  
+	public void printf(String filename) {  
         try {
-	        String resString = EntityUtils.toString(myEntity,"UTF-8"); 
 	        PrintStream ps = new PrintStream(new File(filename));
-	        ps.println(resString);
+	        ps.println(webtext);
 	        ps.flush();
 	        ps.close();
 	        httpClient.close();
-	        response.close();
         } catch(IOException e) {
         	e.printStackTrace();
         } 
+	}
+	
+	public Loginer crawl() {
+		return this;
+	}
+	
+	public boolean checkMap() {
+		return false;
+	}
+	
+	public String getText() {
+		return webtext;
+	}
+	
+	public Map<String, String> getMap() {
+		return map;
 	}
 	
 }

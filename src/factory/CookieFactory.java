@@ -13,6 +13,10 @@ public class CookieFactory extends Factory{
 				Parameters.setLinkedIn(request);
 				break;
 			}
+			case BOC: {
+				Parameters.setBOC(request);
+				break;
+			}
 		}
 		get = request;
 		return this;
@@ -21,6 +25,10 @@ public class CookieFactory extends Factory{
 		switch(cookie) {
 			case LinkedIn: {
 				Parameters.setLinkedIn(request);
+				break;
+			}
+			case BOC: {
+				Parameters.setBOC(request);
 				break;
 			}
 		}

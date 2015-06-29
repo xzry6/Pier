@@ -7,7 +7,7 @@ public class RequestBuilder {
 	private String url;
 	private String user;
 	private String pwd;
-	RequestBuilder(String url, String user, String pwd){
+	public RequestBuilder(String url, String user, String pwd){
 		this.url = url;
 		this.user = user;
 		this.pwd = pwd;
