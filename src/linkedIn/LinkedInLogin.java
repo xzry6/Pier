@@ -17,8 +17,8 @@ public class LinkedInLogin extends Loginer{
 	
 	public static void main(String[] args) {
 		String url = "https://www.linkedin.com/uas/login-submit";
-		String user = "xzry6@mail.missouri.edu";
-		String pwd = "19911121";
+		String user = "********";
+		String pwd = "******";
 		String filename = "linkedin.1";
 		try {
 			Loginer l = new LinkedInLogin();
