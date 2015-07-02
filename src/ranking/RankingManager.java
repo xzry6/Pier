@@ -4,14 +4,14 @@ public class RankingManager {
 	public static void main(String[] args) {
 		StoredProcedure sp = new StoredProcedure();
 		try {
-			sp.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "bcsql", "Alameda2012");
-			//sp.addCollege("C:\\Users\\dell0\\Downloads\\2015ÖĞ¹ú´óÑ§ÅÅĞĞ°ñ700Ç¿.doc");
-			//sp.addCollegeMajor("C:\\Users\\dell0\\Downloads\\2015ÖĞ¹ú´óÑ§×¨ÒµÅÅÃû2.doc");
+			sp.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "*****", "******");
+			//sp.addCollege("C:\\Users\\dell0\\Downloads\\2015ä¸­å›½å¤§å­¦æ’è¡Œæ¦œ700å¼º.doc");
+			//sp.addCollegeMajor("C:\\Users\\dell0\\Downloads\\2015ä¸­å›½å¤§å­¦ä¸“ä¸šæ’å2.doc");
 			sp.close();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 		MajorRankingReader br = new MajorRankingReader();
-		br.write("C:\\Users\\dell0\\Downloads\\2015ÖĞ¹ú´óÑ§×¨ÒµÅÅÃû2.doc","a.txt");
+		br.write("C:\\Users\\dell0\\Downloads\\2015ä¸­å›½å¤§å­¦ä¸“ä¸šæ’å2.doc","a.txt");
 	}
 }
