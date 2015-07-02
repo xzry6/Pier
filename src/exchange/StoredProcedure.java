@@ -53,7 +53,7 @@ public class StoredProcedure {
 			System.out.println(l.checkMap());
 			System.out.println(l.getMap().size());
 			StoredProcedure sp = new StoredProcedure();
-			sp.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "bcsql", "Alameda2012");
+			sp.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "*****", "*******");
 			sp.insertInstance("US_DOLLAR_EXCHANGE_RATE", l.getMap());
 			sp.close();
 		} catch(Exception e){
