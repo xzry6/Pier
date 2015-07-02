@@ -5,20 +5,20 @@ import com.taobao.api.request.UserSellerGetRequest;
 import com.taobao.api.response.UserSellerGetResponse;
 
 public class Test {
-	protected static String url = "http://gw.api.taobao.com/router/rest";//É³Ïä»·¾³µ÷ÓÃµØÖ·
-    //ÕıÊ½»·¾³ĞèÒªÉèÖÃÎª:http://gw.api.taobao.com/router/rest
-    protected static String appkey = "23184936";
-    protected static String appSecret = "c11d6a6140bdb19bb0cde8a1116e2c38";
-    protected static String sessionkey = "6102411f92627131aab1152d22f30ce840851ea03fc884b279393316"; //Èç É³Ïä²âÊÔÕÊºÅsandbox_c_1ÊÚÈ¨ºóµÃµ½µÄsessionkey
+	protected static String url = "http://gw.api.taobao.com/router/rest";//æ²™ç®±ç¯å¢ƒè°ƒç”¨åœ°å€
+    //æ­£å¼ç¯å¢ƒéœ€è¦è®¾ç½®ä¸º:http://gw.api.taobao.com/router/rest
+    protected static String appkey = "*****";
+    protected static String appSecret = "********";
+    protected static String sessionkey = "***********"; //å¦‚ æ²™ç®±æµ‹è¯•å¸å·sandbox_c_1æˆæƒåå¾—åˆ°çš„sessionkey
     public static void testUserGet() {
-        TaobaoClient client = new DefaultTaobaoClient(url, appkey, appSecret);//ÊµÀı»¯TopClientÀà
-        UserSellerGetRequest req = new UserSellerGetRequest();//ÊµÀı»¯¾ßÌåAPI¶ÔÓ¦µÄRequestÀà
+        TaobaoClient client = new DefaultTaobaoClient(url, appkey, appSecret);//å®ä¾‹åŒ–TopClientç±»
+        UserSellerGetRequest req = new UserSellerGetRequest();//å®ä¾‹åŒ–å…·ä½“APIå¯¹åº”çš„Requestç±»
         req.setFields("shawwn,user_id,type");
         //req.setNick("sandbox_c_1");
         UserSellerGetResponse response;
         
         try {
-            response = client.execute(req,sessionkey); //Ö´ĞĞAPIÇëÇó²¢´òÓ¡½á¹û
+            response = client.execute(req,sessionkey); //æ‰§è¡ŒAPIè¯·æ±‚å¹¶æ‰“å°ç»“æœ
             System.out.println("result:"+response.getBody());
          
         } catch (ApiException e) {
