@@ -2,50 +2,32 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="D:/workspace/mysql-connector-java-5.0.8-bin.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/jsoup-1.8.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/fluent-hc-4.4.1.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/httpclient-4.4.1.jar" sourcepath="C:/Users/dell0/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1-sources.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/httpclient-cache-4.4.1.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/httpclient-win-4.4.1.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/httpcore-4.4.1.jar" sourcepath="C:/Users/dell0/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/httpmime-4.4.1.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/httpcomponents-client-4.4.1/lib/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/dell0/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="commons-httpclient"/>
-			<attribute name="maven.artifactId" value="commons-httpclient"/>
-			<attribute name="maven.version" value="3.1"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/dell0/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.15/htmlunit-2.15.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="net.sourceforge.htmlunit"/>
-			<attribute name="maven.artifactId" value="htmlunit"/>
-			<attribute name="maven.version" value="2.15"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/jre/lib/security/local_policy.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/jre/lib/security/US_export_policy.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/taobao-sdk-java-online_standard-20131208.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/taobao-sdk-java-online_standard-20131208-source.jar"/>
-	<classpathentry kind="lib" path="D:/apache-tomcat-8.0.22/lib/tomcat-jni.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-examples-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-excelant-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-ooxml-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-ooxml-schemas-3.9-20121203.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/poi-3.9/poi-scratchpad-3.9-20121203.jar" sourcepath="C:/Users/dell0/.m2/repository/org/apache/poi/poi-scratchpad/3.9/poi-scratchpad-3.9-sources.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/Gson/gson-1.5.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/Gson/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/Gson/slf4j-api-1.6.0.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/Gson/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/fluent-hc-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/gson-1.5.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/httpclient-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/httpclient-cache-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/httpclient-win-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/httpcore-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/httpmime-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/javacsv.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/jsoup-1.8.2.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/poi-examples-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/poi-excelant-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/poi-scratchpad-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/slf4j-api-1.6.0.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/taobao-sdk-java-auto_1432842229211-20150530.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/taobao-sdk-java-auto_1432842229211-20150530-source.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/taobao-sdk-java-online_standard-20131208.jar"/>
+	<classpathentry kind="lib" path="/usr/local/jars/taobao-sdk-java-online_standard-20131208-source.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
