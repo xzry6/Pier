@@ -36,7 +36,7 @@ public class FineTune {
 	    /*connect to mysql and modify the table*/
 	    
 	    MySqlConnection mysql = new MySqlConnection();
-	    mysql.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "bcsql", "Alameda2012","test_insert_bank_BIN",list);
+	    mysql.connect("com.mysql.jdbc.Driver", "jdbc:mysql://192.168.1.254:3306/PIER_CN", "******", "******","test_insert_bank_BIN",list);
 	}
 	
 	
