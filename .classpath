@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="/usr/local/jars/commons-codec-1.9.jar"/>
 	<classpathentry kind="lib" path="/usr/local/jars/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="/usr/local/jars/fluent-hc-4.4.1.jar"/>
@@ -29,5 +28,6 @@
 	<classpathentry kind="lib" path="/usr/local/jars/taobao-sdk-java-auto_1432842229211-20150530-source.jar"/>
 	<classpathentry kind="lib" path="/usr/local/jars/taobao-sdk-java-online_standard-20131208.jar"/>
 	<classpathentry kind="lib" path="/usr/local/jars/taobao-sdk-java-online_standard-20131208-source.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
